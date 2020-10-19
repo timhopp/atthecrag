@@ -3,13 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ssr-server.js",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "micro-form": "^2.0.5",
     "next": "9.5.5",
+    "node.js": "0.0.1-security",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "serverless-mysql": "^1.5.4",
+    "sql-template-strings": "^2.2.2"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "devDependencies": {
+    "@vercel/node": "^1.8.4"
   }
 }
